@@ -1,0 +1,15 @@
+{
+  "name": "use-private-repo-npm-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "private-repo-npm-module": "git://github.com/timowang1991/private-repo-npm-module"
+  }
+}

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  use-private-repo-npm-module:
+    container_name: use-private-repo-npm-module
+    image: node:16-alpine3.12
+    working_dir: /app
+    env_file: .env
+    volumes:
+      - ./:/app
+    command:
+      - /bin/sh
+      - -c
+      - |
+        apk add git
+        git config --global url."https://${GITHUB_PERSONAL_ACCESS_TOKEN}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
+        npm i
+        node index
