@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "private-repo-npm-module": "timowang1991/private-repo-npm-module#semver:^v1.0.0"
+    "private-repo-npm-module": "timowang1991/private-repo-npm-module#semver:^1.0.0"
   }
 }
